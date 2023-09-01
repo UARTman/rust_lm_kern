@@ -1,0 +1,7 @@
+[tasks.build]
+command = "cargo"
+args = ["build"]
+
+[tasks.iso]
+script = "sh build_iso.sh"
+dependencies = ["build"]
